@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parvathi M | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('background.png.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: #c9d1d9;
+    }
+    header {
+      padding: 8rem 2rem 4rem;
+      text-align: center;
+      background: url('back.png') no-repeat center center/cover;
+      background-color: #0d1117;
+      background-blend-mode: overlay;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: #2fa183;
+      font-weight: 600;
+    }
+    nav {
+      background: #161b22;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #2fa183;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #7de1bc;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 4rem;
+      padding-top: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      color: #2fa183;
+      margin-bottom: 1rem;
+    }
+    p, li {
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+    .box {
+      background: rgba(24, 36, 52, 0.85);
+      border: 1px solid rgba(72, 106, 145, 0.3);
+      border-radius: 12px;
+      padding: 1.8rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    .resume-button {
+      background: #238636;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #161b22;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PARVATHI M</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#resume">Resume</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="box">
+        <p>
+          I'm Parvathi M, an aspiring AI/ML engineer with a strong foundation in deep learning and software development. I am passionate about building impactful and intelligent solutions that serve people and solve real-world problems.
+        </p>
+        <p>
+          My interests lie at the intersection of space exploration, artificial intelligence, and social impact. I continuously explore new technologies and love turning complex challenges into elegant solutions.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="box">
+        <strong>ArtConnect Platform – Palette (Ongoing)</strong>
+        <p>A platform empowering artists in India with profiles, artwork uploads, payments, and messaging. Tech stack: React.js, Flask, MySQL, Razorpay, Cloudinary.</p>
+      </div>
+      <div class="box">
+        <strong><a href="https://github.com/Parvathi-Mn/Q-A_chatbot" target="_blank">AI-Powered Document Q&A System</a></strong>
+        <p>Chatbot that parses documents and answers questions using Llama 3, FAISS, Groq API, and OpenAI embeddings. Achieved 92% accuracy.</p>
+      </div>
+      <div class="box">
+        <strong><a href="https://github.com/Parvathi-Mn/crop-recommendation-model" target="_blank">Crop Recommendation Model</a></strong>
+        <p>ML model suggesting crops based on soil and weather data. Accuracy: 94%. Built with Flask, Scikit-learn, HTML, CSS.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <div class="box">
+        <strong>IoT-AI Intern | Vandyam (Apr - May 2025)</strong>
+        <p>Developed AI modules for LoRa-based smart farms. Handled edge AI deployment, offline scalability, and PoC validation using Python and MQTT.</p>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="ParvathiM_Resume_2025.pdf" download class="resume-button">Download Resume</a>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements</h2>
+      <div class="box">
+        <p>Selected from 80,000+ applicants for an elite graph algorithms camp by Codeforces Master. Featured in the Hall of Fame.</p>
+        <p>Certifications: MATLAB, Fundamentals of AI/ML, Programming in Java, Machine Learning</p>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <div class="box">
+        <p>🎨 Drawing/Painting: Acrylic, watercolor, pencil shading</p>
+        <p>💃 Dance: Bharatanatyam, Mohiniyattam, Kuchipudi</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="box">
+        <p>Email: <a href="mailto:parvathi.23bce11828@vitbhopal.ac.in">parvathi.23bce11828@vitbhopal.ac.in</a></p>
+        <p><a href="https://www.linkedin.com/in/parvathi-m-a1b684289/" target="_blank">LinkedIn</a> | <a href="https://github.com/Parvathi-Mn" target="_blank">GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PARVATHI M. All rights reserved.</p>
+  </footer>
+</body>
+</html>
