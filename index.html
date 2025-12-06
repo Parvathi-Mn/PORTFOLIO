@@ -1,185 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parvathi M | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      background: url('background.png.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      color: #c9d1d9;
-    }
-    header {
-      padding: 8rem 2rem 4rem;
-      text-align: center;
-      background: url('back.png') no-repeat center center/cover;
-      background-color: #0d1117;
-      background-blend-mode: overlay;
-    }
-    header h1 {
-      font-size: 3.5rem;
-      color: #2fa183;
-      font-weight: 600;
-    }
-    nav {
-      background: #161b22;
-      padding: 1rem;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #2fa183;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #7de1bc;
-    }
-    main {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section {
-      margin-bottom: 4rem;
-      padding-top: 2rem;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #2fa183;
-      margin-bottom: 1rem;
-    }
-    p, li {
-      line-height: 1.8;
-      font-size: 1rem;
-    }
-    .box {
-      background: rgba(24, 36, 52, 0.85);
-      border: 1px solid rgba(72, 106, 145, 0.3);
-      border-radius: 12px;
-      padding: 1.8rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    }
-    .resume-button {
-      background: #238636;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #161b22;
-      color: #8b949e;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio | Parvathi M</title>
 </head>
-<body>
-  <header>
-    <h1>PARVATHI M</h1>
-  </header>
 
+<body>
   <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#resume">Resume</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#contact">Contact</a>
+    <div class="nav__bar">
+      <a href="#"><span class="logo nav__logo">P</span> Parvathi M</a>
+      <div class="nav__menu__btn" id="menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#others">Others</a></li>
+      <li><a href="#contact" class="btn">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn__large">Contact</a>
   </nav>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <div class="box">
-        <p>
-          I'm Parvathi M, an aspiring AI/ML engineer with a strong foundation in deep learning and software development. I am passionate about building impactful and intelligent solutions that serve people and solve real-world problems.
-        </p>
-        <p>
-          My interests lie at the intersection of space exploration, artificial intelligence, and social impact. I continuously explore new technologies and love turning complex challenges into elegant solutions.
-        </p>
+  <header class="section__container header__container" id="home">
+    <div class="header__image">
+      <img src="assets/header.jpg" alt="header" />
+    </div>
+    <div class="header__content">
+      <div>
+        <h1>Parvathi M</h1>
+        <h2>Third year engineering student at <br>Vellore Institute of Technology</h2>
       </div>
-    </section>
+      <p class="section__description">
+        I’m passionate about Artificial Intelligence and Machine Learning, exploring how data can solve real-world
+        problems. I’ve worked on several AI/ML projects, building models that learn and adapt.
+      </p>
+      <div class="header__btn">
+        <button class="btn">Hire Me Now</button>
+      </div>
+    </div>
+  </header>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="box">
-        <strong>ArtConnect Platform – Palette (Ongoing)</strong>
-        <p>A platform empowering artists in India with profiles, artwork uploads, payments, and messaging. Tech stack: React.js, Flask, MySQL, Razorpay, Cloudinary.</p>
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="assets/bg.png" alt="bg" class="about__bg-1" />
+      <img src="assets/bg.png" alt="bg" class="about__bg-2" />
+      <img src="assets/about.jpg" alt="about" class="about__img" />
+    </div>
+    <div class="about__content">
+      <h2 class="section__header">About Me</h2>
+      <p class="section__description">
+        I’m a passionate developer exploring the world of Artificial Intelligence and Machine Learning, driven by
+        curiosity and a desire to solve real-world problems through intelligent systems.
+      </p>
+      <div class="about__btn">
+        <button class="btn">Download CV</button>
       </div>
-      <div class="box">
-        <strong><a href="https://github.com/Parvathi-Mn/Q-A_chatbot" target="_blank">AI-Powered Document Q&A System</a></strong>
-        <p>Chatbot that parses documents and answers questions using Llama 3, FAISS, Groq API, and OpenAI embeddings. Achieved 92% accuracy.</p>
-      </div>
-      <div class="box">
-        <strong><a href="https://github.com/Parvathi-Mn/crop-recommendation-model" target="_blank">Crop Recommendation Model</a></strong>
-        <p>ML model suggesting crops based on soil and weather data. Accuracy: 94%. Built with Flask, Scikit-learn, HTML, CSS.</p>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="box">
-        <strong>IoT-AI Intern | Vandyam (Apr - May 2025)</strong>
-        <p>Developed AI modules for LoRa-based smart farms. Handled edge AI deployment, offline scalability, and PoC validation using Python and MQTT.</p>
+  <section class="section__container education__container" id="education">
+    <h2 class="section__header">Education</h2>
+
+    <table class="education__table">
+      <thead>
+        <tr>
+          <th>Qualification</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Percentage / CGPA</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Class 10</td>
+          <td>MES HSS Irimbiliyam</td>
+          <td>2020</td>
+          <td>99%</td>
+        </tr>
+
+        <tr>
+          <td>Class 12</td>
+          <td>Universal Public School</td>
+          <td>2023</td>
+          <td>97%</td>
+        </tr>
+
+        <tr>
+          <td>B.Tech (CSE)</td>
+          <td>VIT Bhopal University</td>
+          <td>2023–2027</td>
+          <td>8.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- PROJECTS SECTION FIXED & UPDATED -->
+  <section class="section__container project__container" id="projects">
+    <h2 class="section__header">Projects</h2>
+
+    <div class="project__grid">
+
+      <div class="project__card">
+        <a href="https://github.com/Parvathi-Mn/palette__new" target="_blank">
+          <span><i class="ri-brush-fill"></i></span>
+        </a>
+        <h4>Palette</h4>
+        <p>Platform to support Indian artists with monetization & community features.</p>
       </div>
-    </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <a href="ParvathiM_Resume_2025.pdf" download class="resume-button">Download Resume</a>
-    </section>
-
-    <section id="achievements">
-      <h2>Achievements</h2>
-      <div class="box">
-        <p>Selected from 80,000+ applicants for an elite graph algorithms camp by Codeforces Master. Featured in the Hall of Fame.</p>
-        <p>Certifications: MATLAB, Fundamentals of AI/ML, Programming in Java, Machine Learning</p>
+      <div class="project__card">
+        <a href="https://github.com/Parvathi-Mn/Project-IoT-in-farming-project" target="_blank">
+          <span><i class="ri-plant-fill"></i></span>
+        </a>
+        <h4>IoT in Farming</h4>
+        <p>Smart farming using IoT to monitor environmental conditions in real time.</p>
       </div>
-    </section>
 
-    <section id="hobbies">
-      <h2>Hobbies</h2>
-      <div class="box">
-        <p>🎨 Drawing/Painting: Acrylic, watercolor, pencil shading</p>
-        <p>💃 Dance: Bharatanatyam, Mohiniyattam, Kuchipudi</p>
+      <div class="project__card">
+        <a href="https://github.com/Parvathi-Mn/Project-crop-recommendation-model" target="_blank">
+          <span><i class="ri-seedling-fill"></i></span>
+        </a>
+        <h4>Crop Recommendation</h4>
+        <p>AI-based system recommending optimal crops using soil & climate data.</p>
       </div>
-    </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="box">
-        <p>Email: <a href="mailto:parvathi.23bce11828@vitbhopal.ac.in">parvathi.23bce11828@vitbhopal.ac.in</a></p>
-        <p><a href="https://www.linkedin.com/in/parvathi-m-a1b684289/" target="_blank">LinkedIn</a> | <a href="https://github.com/Parvathi-Mn" target="_blank">GitHub</a></p>
+      <div class="project__card">
+        <a href="https://github.com/Parvathi-Mn/Project-Climate-prediction-web-dev" target="_blank">
+          <span><i class="ri-cloud-windy-fill"></i></span>
+        </a>
+        <h4>Climate Prediction</h4>
+        <p>Model predicting future climate using historical trends & data analysis.</p>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 PARVATHI M. All rights reserved.</p>
+      <div class="project__card">
+        <a href="https://github.com/Parvathi-Mn/Project-Disaster-risk-map-using-satelite-imagery" target="_blank">
+          <span><i class="ri-map-pin-2-fill"></i></span>
+        </a>
+        <h4>Disaster Risk Mapping</h4>
+        <p>Satellite-based disaster risk detection & early warning visualization.</p>
+      </div>
+
+      <div class="project__card">
+        <a href="https://github.com/Parvathi-Mn/Project-Q-A_chatbot" target="_blank">
+          <span><i class="ri-chat-1-fill"></i></span>
+        </a>
+        <h4>QA Chatbot</h4>
+        <p>AI chatbot using NLP to answer user queries with context understanding.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section__container contact__container" id="contact">
+    <div class="logo">P</div>
+    <h2 class="section__header">Contact</h2>
+    <!-- <p class="section__description">
+      Feel free to connect for collaboration, projects, or opportunities!
+    </p> -->
+    <div class="contact__socials">
+      <!-- Twitter -->
+      <a href="https://twitter.com/YOUR_USERNAME" target="_blank">
+        <i class="ri-twitter-fill"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/parvathi-m-a1b684289/" target="_blank">
+        <i class="ri-linkedin-fill"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Parvathi-Mn" target="_blank">
+        <i class="ri-github-fill"></i>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:parvathim213@gmail.com">
+        <i class="ri-mail-line"></i>
+      </a>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    © 2025 Portfolio | Parvathi M
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
